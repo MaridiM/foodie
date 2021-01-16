@@ -1,0 +1,258 @@
+@import vars
+
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    width: 100%
+    height: 100vh
+    font-family: $font
+    font-size: 16px
+    line-height: 28px
+    letter-spacing: 1.75px
+
+img
+    width: 100%
+    height: auto
+
+a
+    text-decoration: none
+    color: $fontColor
+    &:hover
+        color: $activeColor
+
+.app
+    max-width: $maxSize
+    width: 100%
+    height: 100%
+    margin: auto
+
+.header
+    height: 156px
+    width: 100%
+    overflow: hidden
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 40px 0 70px
+    .logo
+        height: 102px
+        max-width: 206px
+        width: 100%
+    .nav
+        display: flex
+        justify-content: space-between
+        height: 48px
+        max-width: 580px
+        width: 100%
+        font-size: 16px
+        font-weight: 600
+        line-height: 28px
+        filter: $dropShadow
+        &-item
+            display: flex
+            align-items: center
+            padding: 10px
+            &:first-child
+                margin-left: 0
+            &:last-child
+                margin-right: 0
+    .menu-burger
+        display: none
+        width: 18px
+        height: 18px
+
+
+.s1-section
+    background: url('../../img/s1_bg.png') no-repeat
+    width: 100%
+    height: auto
+    font-size: 24px
+    font-weight: 700
+    line-height: 36px
+    text-align: center
+    color: #fff
+    padding: 73px 15% 0 15%
+    .title
+        font-size: 58px
+        line-height: 80px
+        padding: 10px 33px
+        margin: 7px auto
+        letter-spacing: .5px
+
+    p
+        font-weight: 500
+        padding: 10px 88.5px 48px 88.5px
+    
+    .btn-group
+        display: flex
+        justify-content: center
+        .btn
+            align-items: center
+            max-width: 236px
+            width: 100%
+            height: 68px
+            padding: 16px 0px
+            box-shadow: $btnShadow
+            border-radius: 30px
+            font-size: 24px
+            font-style: normal
+            font-weight: 700
+            line-height: 36px
+            color: #fff
+            outline: none
+            background: none
+            border: 1px solid #FFFFFF
+            margin: 0 17px
+            &:hover
+                border: none
+                background: #FA4A0C
+        .active
+            background: #FA4A0C
+            border: none
+    .phone
+        margin: -150px 0px 0px 60px
+        max-width: 720px
+        width: 100%
+        height: auto
+
+    hr
+        max-width: 884px
+        width: 100%
+        height: 0px
+        margin: auto
+        border: 1px solid #E4E4E4
+
+.s2-section, .s3-section, .s3-section, .s4-section
+    text-align: center
+    font-size: 44px
+    font-style: normal
+    font-weight: 600
+    line-height: 36px
+    padding-top: 72px 
+    .title
+        font-size: 44px
+        font-weight: 600
+        line-height: 36px
+        letter-spacing: 0.1px
+    .content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 115px 200px 0 200px
+        .phone
+            width: 100%
+            max-width: 300px
+        .body
+            max-width: 568px
+            width: 100%
+            height: auto
+            text-align: left
+            h4
+                font-size: 24px
+                line-height: 36px
+                font-weight: 700
+                color: $activeColor
+                letter-spacing: .5px
+                margin-bottom: 7px
+                
+            h3
+                font-size: 40px
+                font-style: normal
+                font-weight: 900
+                line-height: 57px
+                letter-spacing: 0.2px
+                margin-bottom: 7px
+            p
+                font-size: 24px
+                font-style: normal
+                font-weight: 500
+                line-height: 38px
+                letter-spacing: 0.2px  
+                color: #737373
+
+.s4-section
+    padding-bottom: 150px
+
+.s5-section
+    background: url('../../img/s5_bg.png') no-repeat
+    width: 100%
+    height: 510px
+    text-align: center
+    color: #fff
+    padding-top: 130px
+    h2
+        font-size: 40px
+        font-style: normal
+        font-weight: 700
+        line-height: 57px
+        letter-spacing: 0.2px
+        padding: 10px
+    p
+        font-weight: 500
+        padding: 10px 
+        font-size: 24px
+        font-weight: 500
+        line-height: 38px
+        letter-spacing: 0.2px
+        margin-bottom: 50px
+
+    .btn-group
+        display: flex
+        justify-content: center
+        .btn
+            align-items: center
+            min-width: 142px
+            height: 64px
+            padding: 19px 31px 18px 31px
+            box-shadow: $btnShadow
+            border-radius: 10px
+            font-size: 16px
+            font-style: normal
+            font-weight: 700
+            line-height: 28px
+            color: #fff
+            outline: none
+            background: none
+            border: 1px solid #FFFFFF
+            margin: 0 17px
+            &:hover
+                border: none
+                background: #FA4A0C
+        .active
+            background: #FA4A0C
+            border: none
+
+.footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 225px
+    padding: 0 150px
+    .logo
+        width: 205px
+    .soc
+        display: flex
+        &-item
+            margin: 0 12px
+            img
+                padding: 5px
+    
+    .copyright
+        font-family: 'Roboto', sans-serif
+        font-size: 12px
+        font-style: normal
+        font-weight: 700
+        line-height: 18px
+        letter-spacing: 0.1px
+
+@import media
+
+
+
+
+                
+
